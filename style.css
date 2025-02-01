@@ -22,25 +22,34 @@ footer {
   background-color: #f5f5f5; /* optional styling */
 }
 
-/* Social Nav Container */
 .social-nav {
-  /* This ensures the links appear next to each other */
   display: inline-flex;
-  gap: 1.5rem; /* Spacing between icons */
+  gap: 1.5rem;
+  font-size: 2rem; /* Make icons bigger if you like */
 }
 
-/* Each Link */
-.social-nav a {
-  text-decoration: none;
-  color: #444;
-  font-size: 2rem; /* Bigger icons */
-  transition: color 0.3s;
+/* Twitter icon (brand blue) */
+.social-nav a[href*="twitter.com"] i {
+  color: #1DA1F2;
 }
 
-/* Hover effect */
-.social-nav a:hover {
-  color: #1da1f2; /* or any accent color you like */
+/* GitHub icon (brand black) */
+.social-nav a[href*="github.com"] i {
+  color: #181717;
 }
+
+.social-nav a[href*="instagram.com"] i {
+  font-size: 2rem;
+  background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* The lines above "clip" the gradient to the icon shape */
+}
+
+/* LinkedIn icon (brand blue) */
+.social-nav a[href*="linkedin.com"] i {
+  color: #0077B5;
+} */
 
 /* Example: top-right position for rotating image */
 #rotatingImage {
