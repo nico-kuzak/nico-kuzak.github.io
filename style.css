@@ -46,10 +46,9 @@ footer {
   /* The lines above "clip" the gradient to the icon shape */
 }
 
-/* LinkedIn icon (brand blue) */
 .social-nav a[href*="linkedin.com"] i {
   color: #0077B5;
-} */
+} 
 
 /* Example: top-right position for rotating image */
 #rotatingImage {
