@@ -22,28 +22,24 @@ footer {
   background-color: #f5f5f5; /* optional styling */
 }
 
-/* Social icons in header */
-.social-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 1rem;
+/* Social Nav Container */
+.social-nav {
+  /* This ensures the links appear next to each other */
+  display: inline-flex;
+  gap: 1.5rem; /* Spacing between icons */
 }
 
-.social-nav li {
-  display: inline-block;
-}
-
+/* Each Link */
 .social-nav a {
   text-decoration: none;
   color: #444;
-  font-size: 1.5rem;
+  font-size: 2rem; /* Bigger icons */
   transition: color 0.3s;
 }
 
+/* Hover effect */
 .social-nav a:hover {
-  color: #1da1f2; /* or any highlight color */
+  color: #1da1f2; /* or any accent color you like */
 }
 
 /* Example: top-right position for rotating image */

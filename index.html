@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Nico Kuzak</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
   
     <!-- Your Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/d2b47aeafb.js" crossorigin="anonymous"></script>
@@ -14,15 +15,24 @@
 <body>
   <!-- Header / Hero Section -->
   <header>
-    <h1>Nico's Website</h1>
+    <h1>Nico Kuzak</h1>
     <!-- Example: Social Media Icons using your kit -->
+  <!-- Social Media Icons (inline) -->
     <nav class="social-nav">
-        <ul>
-          <li><a href="https://twitter.com/nicokuzak" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-          <li><a href="https://github.com/nico-kuzak" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-          <li><a href="https://instagram.com/nicokuzak" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
-      </nav>
+        <a href="https://twitter.com/nicokuzak" target="_blank">
+        <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://github.com/nico-kuzak" target="_blank">
+        <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://instagram.com/nicokuzak" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nicokuzak" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+        <!-- or 'fa-linkedin-in', depending on Font Awesome version -->
+        </a>
+    </nav>
     <!-- Optional tagline/subheading could go here -->
     <!-- The rotating image pinned top-right, for example (positioned via CSS) -->
     <img id="rotatingImage" src="" alt="Rotating image">
@@ -50,7 +60,7 @@
       </p>
       <!-- Alternatively, you could link to an external URL or keep it on GitHub -->
       <p>
-        <a href="https://github.com/nico-kuzak/nico-kuzak.github.io/raw/main/docs/nico_kuzak_resume.pdf" target="_blank">
+        <a href="https://github.com/nico-kuzak/nico-kuzak.github.io/blob/0df396629909a394695de401e68a4e1092a27f76/docs/nico_kuzak_resume.pdf" target="_blank">
           View Resume on GitHub
         </a>
       </p>
@@ -77,6 +87,19 @@
     </section>
   </main>
 
+  <section id="publications">
+    <h2>Publications</h2>
+    <p>
+      Here’s one of my recent blog posts, embedded right here:
+    </p>
+    <iframe
+      src="https://huggingface.co/blog/rocketmoney-case-study"
+      width="100%"
+      height="600"
+      style="border: none;"
+      title="R$ x HuggingFace"
+    ></iframe>
+  </section>
   <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Nico Kuzak — All Rights Reserved</p>
