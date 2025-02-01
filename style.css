@@ -16,4 +16,13 @@ body {
     border: 2px solid #aaa;
     border-radius: 8px;
   }
+  .container {
+    text-align: center;   /* This centers inline elements like <h1> and <button> */
+  }
   
+  /* If you want the image itself horizontally centered
+     (and remove any default spacing around it), add: */
+  #randomImage {
+    display: block;       /* <img> is inline by default, so make it block */
+    margin: 20px auto;    /* center it horizontally, add some top/bottom margin */
+  }
