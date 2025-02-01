@@ -1,28 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8">
     <title>Nico Kuzak</title>
-    <!-- Link to your CSS file -->
-    <link rel="stylesheet" href="style.css" />
+  
+    <!-- Your Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/d2b47aeafb.js" crossorigin="anonymous"></script>
+  
+    <!-- Your own CSS -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+  <!-- Header / Hero Section -->
+  <header>
     <h1>Nico's Website</h1>
-    <!-- <p>< /p> -->
-    <!-- <div class="container">
-        <h1>WIP</h1>
-        <button id="randomImageButton">Nico's Film Camera Randomizer</button>
-        <br />
-        <img id="randomImage" src="" alt="Random image" width="400" />
-        </div> -->
-    <img id="rotatingImage" src="" alt="Rotating image" />
-    <p>WIP Bio</p>
-    
-    <p>WIP Resume</p>
+    <!-- Example: Social Media Icons using your kit -->
+    <nav class="social-nav">
+        <ul>
+          <li><a href="https://twitter.com/nicokuzak" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="https://github.com/nico-kuzak" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://instagram.com/nicokuzak" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </nav>
+    <!-- Optional tagline/subheading could go here -->
+    <!-- The rotating image pinned top-right, for example (positioned via CSS) -->
+    <img id="rotatingImage" src="" alt="Rotating image">
+  </header>
 
-    <p>WIP Hobbies</p>
+  <main>
+    <!-- BIO SECTION -->
+    <section id="bio">            
+      <h2>Bio</h2>
+      <p>
+        Hello! I'm Nico Kuzak, a Senior Machine Learning Engineer @ Rocket Money. Enjoy my WIP website!
+      </p>
+    </section>
 
-  <!-- Link to your JavaScript file -->
+    <!-- RESUME SECTION -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>
+        Interested in my professional background? Check out my resume! 
+      </p>
+      <!-- Fake link to show how you'd reference a PDF -->
+      <!-- Put your real PDF in a folder named 'docs' (or anywhere you like) -->
+      <p>
+        <a href="docs/nico_kuzak_resume.pdf" download>Download Resume (PDF)</a>
+      </p>
+      <!-- Alternatively, you could link to an external URL or keep it on GitHub -->
+      <p>
+        <a href="https://github.com/nico-kuzak/nico-kuzak.github.io/raw/main/docs/nico_kuzak_resume.pdf" target="_blank">
+          View Resume on GitHub
+        </a>
+      </p>
+    </section>
+
+    <!-- HOBBIES SECTION -->
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Playing and Watching Soccer - Specifically Boca and Argentina</li>
+        <li>Rock Climbing</li>
+        <li>Reading (Currently just Substacks and Stratechery)</li>
+        <li>Padel</li>
+        <li>Yoga</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS or ANY OTHER SECTION -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>
+        Currently working on...
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Nico Kuzak — All Rights Reserved</p>
+  </footer>
+
+  <!-- JavaScript for random or rotating images -->
   <script src="random_image.js"></script>
 </body>
 </html>
