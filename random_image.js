@@ -6,7 +6,7 @@ const images = [
     "images/nico1.jpg",
     "images/nico2.jpg",
     "images/nico3.jpg",
-    "images/nico4.png"
+    "images/nico4.jpg"
   ];
   
   // 2. Wait until the DOM content has loaded
