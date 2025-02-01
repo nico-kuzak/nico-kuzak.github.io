@@ -9,20 +9,20 @@ const images = [
     "images/nico4.jpg"
   ];
   
-// 2. Wait until the DOM content has loaded
-document.addEventListener("DOMContentLoaded", function() {
-    // Grab references to our DOM elements
-    const randomImageButton = document.querySelector("#randomImageButton");
-    const randomImage = document.querySelector("#randomImage");
+  document.addEventListener("DOMContentLoaded", function() {
+    const rotatingImage = document.getElementById("rotatingImage");
   
-    // 3. Immediately display a random image on load
-    const initialIndex = Math.floor(Math.random() * images.length);
-    randomImage.src = images[initialIndex];
+    // Helper function to get a random image from the array
+    function getRandomImage() {
+      return images[Math.floor(Math.random() * images.length)];
+    }
   
-    // 4. When the button is clicked, show a new random image
-    randomImageButton.addEventListener("click", function() {
-      const randomIndex = Math.floor(Math.random() * images.length);
-      randomImage.src = images[randomIndex];
-    });
+    // 3. Set an initial random image
+    rotatingImage.src = getRandomImage();
+  
+    // 4. Automatically update the image every 5 seconds (for example)
+    setInterval(() => {
+      rotatingImage.src = getRandomImage();
+    }, 2000); // 5000 ms = 5 seconds
   });
   
