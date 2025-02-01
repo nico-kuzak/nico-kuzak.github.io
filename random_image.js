@@ -3,10 +3,10 @@
 // 1. Create an array with the file paths of your images
 // (Make sure they match the actual filenames in your /images/ folder.)
 const images = [
-    "images/photo1.jpg",
-    "images/photo2.jpg",
-    "images/photo3.jpg",
-    "images/photo4.png"
+    "images/nico1.jpg",
+    "images/nico2.jpg",
+    "images/nico3.jpg",
+    "images/nico4.png"
   ];
   
   // 2. Wait until the DOM content has loaded
