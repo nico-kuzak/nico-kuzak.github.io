@@ -41,9 +41,8 @@ footer {
 .social-nav a[href*="instagram.com"] i {
   font-size: 2rem;
   background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4);
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  /* The lines above "clip" the gradient to the icon shape */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 }
 
 .social-nav a[href*="linkedin.com"] i {
