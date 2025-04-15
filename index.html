@@ -1,103 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Nico Kuzak</title>
-    <link rel="icon" href="images/favicon.png" type="image/png">
-  
-    <!-- Your Font Awesome Kit -->
-    <script src="https://kit.fontawesome.com/d2b47aeafb.js" crossorigin="anonymous"></script>
-  
-    <!-- Your own CSS -->
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nico Kuzak</title>
+  <link rel="icon" href="images/favicon.png" type="image/png" />
+  <script src="https://kit.fontawesome.com/d2b47aeafb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header / Hero Section -->
+  <button id="theme-toggle" title="Toggle Dark Mode">🌓</button>
+
   <header>
-    <h1>Nico Kuzak</h1>
-    <!-- Example: Social Media Icons using your kit -->
-  <!-- Social Media Icons (inline) -->
-    <nav class="social-nav">
-        <a href="https://twitter.com/nicokuzak" target="_blank">
-        <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="https://github.com/nico-kuzak" target="_blank">
-        <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://instagram.com/nicokuzak" target="_blank">
-        <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/nicokuzak" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-        <!-- or 'fa-linkedin-in', depending on Font Awesome version -->
-        </a>
-    </nav>
-    <!-- Optional tagline/subheading could go here -->
-    <!-- The rotating image pinned top-right, for example (positioned via CSS) -->
-    <img id="rotatingImage" src="" alt="Rotating image">
+    <div class="header-container">
+      <h1>Nico Kuzak</h1>
+      <p class="subtitle">Senior Machine Learning Engineer @ Rocket Money</p>
+
+      <nav class="navbar">
+        <a href="#bio">About</a>
+        <a href="#professional">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#hobbies">Hobbies</a>
+      </nav>
+
+      <nav class="social-nav">
+        <a href="https://twitter.com/nicokuzak" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/nico-kuzak" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://instagram.com/nicokuzak" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/nicokuzak" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </nav>
+
+      <img id="rotatingImage" src="" alt="Rotating image" />
+    </div>
   </header>
 
   <main>
-    <!-- BIO SECTION -->
-    <section id="bio">            
-      <h2>Bio</h2>
-      <p>
-        Hello! I'm Nico Kuzak, a Senior Machine Learning Engineer @ Rocket Money. Enjoy my WIP website!
-      </p>
+    <section id="bio">
+      <h2>About Me</h2>
+      <p>Hello! I'm Nico Kuzak, a Senior Machine Learning Engineer @ Rocket Money. This site is a work in progress, so stay tuned for updates!</p>
     </section>
 
-    <!-- RESUME SECTION -->
     <section id="professional">
       <h2>Professional</h2>
       <p>
-        Interested in my professional background? Check out my 
-        <a href="https://github.com/nico-kuzak/nico-kuzak.github.io/blob/main/docs/nico_kuzak_resume.pdf" target="_blank">
-          resume
-        </a> 
-        (or 
-        <a href="docs/nico_kuzak_resume.pdf" download>download as PDF</a>
-        ).
+        Interested in my background? View my <a href="https://github.com/nico-kuzak/nico-kuzak.github.io/blob/main/docs/nico_kuzak_resume.pdf" target="_blank">resume</a>
+        or <a href="docs/nico_kuzak_resume.pdf" download>download the PDF</a>.
       </p>
-      <h3>Publications</h3>
-      <p>
-          <!-- The clickable link part -->
-          <a href="https://huggingface.co/blog/rocketmoney-case-study">
-            R$ x 🤗: Scaling Volatile ML Models in Production
-          </a>
-          <!-- The plain text part on the same line -->
-          <!-- : Scaling Volatile ML Models in Production -->
-      </p>
-
+      <div class="publications">
+        <h3>Publications</h3>
+        <ul>
+          <li><a href="https://huggingface.co/blog/rocketmoney-case-study" target="_blank">R$ x 🤗: Scaling Volatile ML Models in Production</a></li>
+        </ul>
+      </div>
     </section>
 
-    <!-- HOBBIES SECTION -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Test Project 1</h3>
+          <p>Test Project 1 Explanation</p>
+        </div>
+        <div class="project-card">
+          <h3>Test Project 2</h3>
+          <p>Test Project 2 Explanation</p>
+        </div>
+      </div>
+    </section>
+
     <section id="hobbies">
       <h2>Hobbies</h2>
       <ul>
-        <li>Playing and Watching Soccer - Specifically Boca and Argentina</li>
-        <li>Rock Climbing</li>
-        <li>Reading (Currently just Substacks and Stratechery)</li>
-        <li>Padel</li>
-        <li>Yoga</li>
+        <li>⚽ Playing & watching soccer (Boca Juniors + Argentina)</li>
+        <li>🧗 Rock climbing</li>
+        <li>📚 Reading Substacks & Stratechery</li>
+        <li>🏓 Padel</li>
+        <li>🧘 Yoga</li>
       </ul>
     </section>
 
-    <!-- PROJECTS or ANY OTHER SECTION -->
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>
-        Currently working on...
-      </p>
+    <section id="contact">
+      <h2>Contact</h2>
+      <a class="contact-btn" href="mailto:nico@kuzak.me">Email Me</a>
     </section>
   </main>
 
-  <!-- FOOTER -->
   <footer>
     <p>&copy; 2025 Nico Kuzak — All Rights Reserved</p>
   </footer>
 
-  <!-- JavaScript for random or rotating images -->
   <script src="random_image.js"></script>
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 </html>
